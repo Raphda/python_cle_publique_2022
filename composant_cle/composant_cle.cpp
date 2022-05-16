@@ -46,7 +46,7 @@ class Cle {
 namespace py = pybind11;
 
 PYBIND11_MODULE(composant_cle, cle) {
-	py::class_<Cle>(cle, "cle")
+	py::class_<Cle>(Cle, "Cle")
 		.def(py::init<>())
 		.def("initialize", &Cle::initialize)
 		.def("getPrivateKey", &Cle::getPrivateKey)
