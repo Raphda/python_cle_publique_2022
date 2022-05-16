@@ -45,7 +45,7 @@ class Cle {
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(cle_component, cle) {
+PYBIND11_MODULE(composant_cle, cle) {
 	py::class_<Cle>(cle, "cle")
 		.def(py::init<>())
 		.def("initialize", &Cle::initialize)
